@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      for (i = 1; i <= 20; i++) {
+        document.write(`${i}<br>`);
+      }
+
+      document.write(`<br><br>`);
+
+      for (i = 20; i >= 1; i--) {
+        document.write(`${i}<br>`);
+      }
+
+      document.write(`<br><br>`);
+      // nested loop-> loop inside another loop
+      for (let a = 1; a <= 2; a++) {
+        document.write(`Outer:${a} <br>`);
+
+        for (let b = 1; b <= 5; b++) {
+          document.write(`Inner:${b}<br>`);
+        }
+      }
+      document.write(`<br><br>`);
+      // multiplication table of 1 to 5
+      for (i = 1; i <= 5; i++) {
+        for (j = 1; j <= 10; j++) {
+          document.write(`${i}x${j}=${i * j} <br>`);
+        }
+        document.write(`<hr>`); //hr=> horizontal line
+      }
+    </script>
+  </body>
+</html>

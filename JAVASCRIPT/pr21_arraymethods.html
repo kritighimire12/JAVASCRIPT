@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      const fruits = ["apple", "orange", "kiwi", "mango", "grapes"];
+      document.write(`${fruits}<br>`);
+
+      //indexing=> start from 0
+      document.write(`${fruits[0]}<br>`);
+      document.write(`${fruits[2][1]}<br>`);
+
+      //.length=> 1 bata count hunxa
+      document.write(`${fruits.length}<br>`);
+
+      //.pop()=> remove the last element
+      fruits.pop();
+      document.write(`${fruits}<br>`);
+
+      //.push()-> add element at the last
+      fruits.push("grapes");
+      document.write(`${fruits}<br>`);
+
+      //.shift()=> removes the first element
+      fruits.shift();
+      document.write(`${fruits}<br>`);
+
+      //unshift()=> add element to the first
+      fruits.unshift("pupaya");
+      document.write(`${fruits}<br>`);
+
+      //splice()=> 2 is the index from where the new elemnts are added or removed the element.
+      //0-> kati ota element hataune
+      fruits.splice(2, 0, "guava", "watermelon");
+      document.write(`${fruits}<br>`);
+
+      fruits.splice(2, 2, "dragon fruit");
+      document.write(`${fruits}<br>`);
+
+      //.sort()=> ascending order ma arrange
+      fruits.sort();
+      document.write(`${fruits}<br>`);
+
+      //.reverse()=> reverse the array elements (last bata display hune)
+      fruits.reverse();
+      document.write(`${fruits}<br>`);
+    </script>
+  </body>
+</html>

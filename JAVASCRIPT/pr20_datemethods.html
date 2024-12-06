@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      let date = new Date();
+      document.write(`${date}<br>`);
+
+      //to get full year-> getFullYear()
+      document.write(`${date.getFullYear()}<br>`);
+
+      //to get month()-> getMonth-> return value from 0-11
+      document.write(`${date.getMonth()}<br>`);
+
+      //to get date -> .getDay()-> return the value from 0 to 6
+      document.write(`${date.getDay()}<br>`);
+
+      //.getDate
+      document.write(`${date.getDate()}<br>`);
+
+      //.getHours
+      document.write(`${date.getHours()}<br>`);
+
+      //.getMinutes
+      document.write(`${date.getMinutes()}<br>`);
+
+      //.getSeconds
+      document.write(`${date.getSeconds()}<br>`);
+
+      //.getMilliseconds
+      document.write(`${date.getMilliseconds()}<br>`);
+
+      // to get date,year,month
+      document.write(`${date.toLocaleDateString()}<br>`);
+
+      document.write(`${date.toLocaleTimeString()}<br>`);
+
+      document.write(`${date.toTimeString()}<br>`);
+
+      //set
+      let d = new Date();
+      d.setFullYear(2058);
+      document.write(`${d}<br>`);
+
+      d.setMonth(8);
+      document.write(`${d}<br>`);
+
+      d.setMinutes(15);
+      document.write(`${d}<br>`);
+    </script>
+  </body>
+</html>

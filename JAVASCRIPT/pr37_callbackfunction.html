@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div></div>
+    <script>
+      //yeuta function le kam garesi matra arko function le kam garne
+      const student = [
+        { name: "sudip adhikari", age: 22 },
+        { name: "kriti ghimire", age: 23 },
+        { name: "sangita adhikari", age: 24 },
+      ];
+      //define the function
+      const showStudent = () => {
+        setTimeout(() => {
+          let result = "";
+          student.forEach((info) => {
+            result += ` <ul>
+                        <li>${info.name}   </li>
+                        <li>${info.age}</li>
+                        </ul>
+                    `;
+          });
+          document.querySelector("div").innerHTML = result;
+        }, 2000);
+      };
+      //call the function show student
+     // showStudent();
+
+      //define addStudent
+      // const addStudent=newdata=>{
+      //   setTimeout(() => {
+      //     student.push(newdata)
+          
+      //   }, 3000);
+      // }
+
+      //call the function add student
+      //addStudent({name:'Saksham karki',age:27})
+        const addStudent=(newdata,callback)=>{
+          setTimeout(() => {
+          student.push(newdata)
+          callback()
+          
+       }, 3000);
+
+        }
+
+
+
+      addStudent({name:'Saksham karki',age:27},showStudent)//function vitra function add garepaxi paramater lekhna pardaina
+
+    </script>
+  </body>
+</html>

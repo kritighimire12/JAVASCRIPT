@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Object Structure</title>
+  </head>
+  <body>
+    <script>
+      const student = {
+        name: "kriti ghimire",
+        address: "lamjung",
+      };
+      //   const showStudent = (info) => {
+      //     return `the name of the student is ${info.name}.`;
+      //   };
+
+      //or
+
+      const showStudent = ({ name, address }) => {
+        return `the name of the student is ${name}. She is from ${address}.`;
+      };
+
+      const showData = showStudent(student);
+      document.write(`${showData} <br>`);
+
+      // function call nagari garda:
+
+      const { name, address } = student;
+      //it is same as : const name=student.name , address=student.address
+      document.write(`${name}<br>`);
+      document.write(`${address}<br>`);
+    </script>
+  </body>
+</html>

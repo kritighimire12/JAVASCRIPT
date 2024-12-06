@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>String Method</title>
+  </head>
+  <body>
+    <script>
+      //index 0 bata count hunxa
+      const text =
+        "This is a javascript class and javascript is a programming language for web.";
+
+      document.write(`${text} <br>`);
+      document.write(`${text[0]}<br>`);
+      document.write(`${text[5]}<br>`);
+
+      //to count the length of the string => .length
+      //length 1 bata count hunxa & space pani count hunxa
+      document.write(`${text.length}<br>`);
+
+      //indexof()
+      document.write(`${text.indexOf(`javascript`)}<br>`);
+      //search
+      document.write(`${text.search(`javascript`)}<br>`);
+      document.write(`${text.lastIndexOf(`javascript`)}<br>`);
+
+      //replace()
+      document.write(`${text.replace(`javascript`, "js")}`);
+
+      //replaceall()
+      document.write(`${text.replaceAll(`javascript`, "js")}<br>`);
+
+      //toUpperCase()
+      document.write(`${text.toUpperCase()}<br>`);
+
+      //toLowerCase()
+      document.write(`${text.toLowerCase()}<br>`);
+
+      //spilt()
+      document.write(`${text.split(` `)}<br>`);
+
+      //slice(start,end)
+      //substring(start,end)
+      //substr(start,length)
+
+      document.write(`${text.slice(5, 30)}........<br>`);
+      document.write(`${text.substring(5, 30)}........<br>`);
+      document.write(`${text.substr(5, 30)}........<br>`);
+
+      //includes(`  )
+    </script>
+  </body>
+</html>

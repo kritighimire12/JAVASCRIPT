@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      /*
+        if statement
+        if else statment
+        if.....else if.....else.. statement
+        switch.. statement
+        */
+
+      const num = Number(
+        prompt("enter the number to check if it is even or odd.")
+      );
+      if (num % 2 == 0) {
+        document.write(`${num} is an even number`);
+      } else {
+        document.write(`${num} is an odd number`);
+      }
+
+      //leap year
+      let year = new Date().getFullYear();
+      switch (true) {
+        case year % 4 == 0 && year % 100 !== 0:
+        case year % 400 == 0:
+          document.write(`${year} is a leap year.<br>`);
+          break;
+        default:
+          document.write(`${year} is a not leap year.<br>`);
+      }
+    </script>
+  </body>
+</html>

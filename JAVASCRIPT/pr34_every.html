@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      // every method will return true if all the elements of the array passes the condition/test.
+      // harek le true deko xa vane matra true otherwise false
+      const price = [20, 30, 40, 50, 60];
+      //   const test = price.every((item) => {
+      //     return item > 30;
+      //   });
+      const test = price.every((item) => item > 30);
+
+      document.write(`${test}<br>`);
+
+      //some-> it will return true if any one element of the array passes the test/condition
+      const numbers = [10, 20, 30, 40, 50, 60, 70];
+      const result = numbers.some((data) => data <= 10);
+      document.write(`${result}<br>`);
+
+      //find -> it will return first array element that passes the test.
+      const check = numbers.find((data) => data > 30);
+      document.write(`${check}`);
+
+      //includes()
+    </script>
+  </body>
+</html>

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .content {
+        height: 500px;
+        width: 500px;
+        margin: auto;
+      }
+      .content img {
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="content" onmouseover="change()" onmouseout="previous()">
+      <img
+        src="https://static.vecteezy.com/system/resources/thumbnails/024/669/482/small_2x/mountain-countryside-landscape-at-sunset-dramatic-sky-over-a-distant-valley-green-fields-and-trees-on-hill-beautiful-natural-landscapes-of-the-carpathians-generative-ai-variation-8-photo.jpeg"
+        alt=""
+      />
+    </div>
+    <script>
+      const change = () => {
+        document.querySelector(`img`).src =
+          "https://www.heritagefund.org.uk/sites/default/files/styles/main_image_desktop/public/media/imgs/JapaneseGarden_60_954x536.jpg.webp?itok=9iPyc_1Y";
+      };
+
+      const previous = () => {
+        document.querySelector(`img`).src =
+          "https://static.vecteezy.com/system/resources/thumbnails/024/669/482/small_2x/mountain-countryside-landscape-at-sunset-dramatic-sky-over-a-distant-valley-green-fields-and-trees-on-hill-beautiful-natural-landscapes-of-the-carpathians-generative-ai-variation-8-photo.jpeg";
+      };
+    </script>
+  </body>
+</html>

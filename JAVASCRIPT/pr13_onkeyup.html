@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <input type="password" name="pwd" id="pwd" />
+    <h2 id="title"></h2>
+    <script>
+      const pwdInput = document.getElementById("pwd");
+      //   const demoFunction = () => {
+      //     document.querySelector("#title").innerHTML = pwdInput.value;
+      //   };
+
+      //pwdInput.addEventListener("keyup", function () {
+      pwdInput.addEventListener("keyup", () => {
+        document.querySelector("#title").innerHTML = pwdInput.value;
+      });
+    </script>
+  </body>
+</html>

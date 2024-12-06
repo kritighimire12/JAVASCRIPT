@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Local storage and session storage</title>
+  </head>
+  <body>
+    <button onclick="remove()">Delete</button>
+    <script>
+      //set items in the local storage-> local ma basirakhxa
+      localStorage.setItem("test", "This is the local storage.");
+
+      //to get item from the local storage.
+      const data = localStorage.getItem("test");
+      console.log(data);
+      //document.write(`${data}`);
+
+      const remove = () => {
+        localStorage.removeItem("test");
+      };
+
+      //JSON-> Javascript object notation key ra value hunxa, number ma quotation hudaina
+      const student = {
+        firstname: "kriti ",
+        lastname: "ghimire",
+        height: 5.6,
+        weight: 55,
+        subject: ["html", "css", "js", "react", "python"],
+      };
+      localStorage.setItem("data", JSON.stringify(student)); // string ma huna parxa so json.... gareko natra object ma hunthyo
+
+      const result = JSON.parse(localStorage.getItem("data"));
+      console.log(result.firstname);
+      console.log(result.lastname);
+      console.log(result.height);
+      console.log(result.weight);
+      console.log(result.subject[0]);
+      console.log(result.subject[1]);
+      console.log(result.subject[2]);
+      console.log(result.subject[3]);
+    </script>
+  </body>
+</html>

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      // map will return a new array. It will not change the original array.
+      //map vitra pani function define gareko ho but lekhna pardaina so parameter matra lekheko (anonymous function use hunxa)
+      const numbers = [1, 2, 3, 4, 5, 6];
+      const result = numbers.map((num) => {
+        return num * num;
+      });
+      document.write(`${result} <br>`);
+
+      //flatMap
+      const demo = numbers.flatMap((x) => {
+        return x ** 2;
+      });
+      document.write(`${demo}<br>`);
+    </script>
+  </body>
+</html>

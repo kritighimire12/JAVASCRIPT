@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      const num = 123.45678;
+      document.write(`${num} <br>`);
+      // tofixed()=> to show number of digits after the decimal
+      document.write(`${num.toFixed(3)} <br>`);
+
+      //toPrecision()
+      document.write(`${num.toPrecision(4)} <br>`);
+
+      //toExponential()
+      document.write(`${num.toExponential()} <br>`);
+      document.write(`${num.toExponential(3)} <br>`);
+
+      //string to number
+      //number
+      //parseInt
+      //parseFloat
+      const x = parseInt("12.56");
+      document.write(`${x}<br>`);
+
+      const y = parseFloat("32.5 is the average marks");
+      document.write(`${y}<br>`);
+    </script>
+  </body>
+</html>

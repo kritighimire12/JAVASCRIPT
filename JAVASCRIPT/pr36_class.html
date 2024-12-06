@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h3></h3>
+    <h2></h2>
+    <script>
+      //class is group and obj vaneko tesko vitra ko part
+
+      class Students {
+        constructor(fname, lname, age) {
+          //automatically call hunxa
+          //value haru use garna attributes define garnu parxa
+          this.firstname = fname;
+          this.lastname = lname;
+          this.age = age;
+        }
+      }
+
+      //indentation of a class: also known as objects
+
+      const obj_ram = new Students("ram", "karki", 27); //obj banako
+      const obj_krii = new Students("kriti", "Ghimire", 22);
+
+      document.querySelector("h3").innerHTML = `The name of the student is ${obj_ram.firstname} ${obj_ram.lastname}. he is ${obj_ram.age} years old.`;
+
+      document.querySelector("h2").innerHTML = `The name of the student is ${obj_krii.firstname} ${obj_krii.lastname}. She is ${obj_krii.age} years old.`;
+    </script>
+  </body>
+</html>
